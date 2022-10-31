@@ -3,23 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FotoComponent } from './foto/foto.component';
-import { Header } from './head/head.component';
-import { InicioComponent } from './inicio/inicio.component';
-import { FormularioComponent } from './formulario/formulario.component';
+import { FotografiaModule } from './fotografia/fotografia.module';
+import { SharedModule } from './shared/shared.module';
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    FotoComponent,
-    Header,
-    InicioComponent,
-    FormularioComponent
+    AppComponent,    
+    
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FotografiaModule,
+    SharedModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
