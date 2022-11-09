@@ -1,9 +1,12 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { FormsModule } from "@angular/forms";
 
 import { FotoComponent } from "./foto/foto.component";
 import { FormularioComponent } from "./formulario/formulario.component";
 import { InicioComponent } from "./inicio/inicio.component";
+
+
 
 
 @NgModule({
@@ -13,9 +16,10 @@ import { InicioComponent } from "./inicio/inicio.component";
         FormularioComponent,
         InicioComponent
     ],
-
+    
     imports: [
-        BrowserModule
+        BrowserModule,
+        FormsModule
     ],
 
     //Permite que outros modulos ou componentes acessem este grupo
